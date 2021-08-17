@@ -1,0 +1,157 @@
+:root {
+    --dark: darkslategray;
+    --light: white;
+}
+
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Element Selectors */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100px;
+    width: 100%;
+    background-color: var(--dark);
+    color: var(--light);
+    border-bottom: 3px solid black;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+nav {
+    margin: 10px;
+}
+
+nav li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 2px 5px;
+    font-size: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--light);
+    padding: 8px;
+}
+
+a:hover {
+    border-radius: 4px;
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+a:focus {
+    border-radius: 4px;
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+main {
+    margin: auto;
+    max-width: 992px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--dark);
+    color: var(--light);
+    border-top: 3px solid black;
+}
+
+footer h4,
+footer li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 7px;
+    font-size: 16px;
+}
+
+footer a {
+    text-decoration: underline;
+    color: var(--light);
+    padding: 6px;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+article h2 {
+    text-align: center;
+    width: 20%;
+}
+
+section {
+    padding: 10px;
+    width: 80%;
+    border-left: 3px solid var(--dark);
+}
+
+#contact ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px;
+}
+
+#contact li {
+    list-style-type: none;
+    font-size: 20px;
+    padding: 15px;
+}
+
+#horiseon {
+    height: 400px;
+    width: 100%;
+    background-image: url("../images/horiseon-demo.png");
+}
+
+figure h3 {
+    display: inline-block;
+    height: 50px;
+    padding: 15px;
+    background-color: rgba(126, 124, 124, 0.9);
+    color: black;
+    position: relative;
+    top: 320px;
+}
+
+@media screen and (max-width: 992px) {
+    article h2 {
+        width: 20%;
+    }
+    section {
+        width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    article h2 {
+        width: 100%;
+    }
+    section {
+        width: 100%;
+    }
+  }
