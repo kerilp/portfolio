@@ -1,6 +1,7 @@
 :root {
-    --dark: darkslategray;
+    --dark: black;
     --light: white;
+    --blue: rgb(0, 87, 123);
 }
 
 /* Universal Selector */
@@ -12,21 +13,23 @@
 
 /* Element Selectors */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--dark);
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    height: 100px;
     width: 100%;
-    background-color: var(--dark);
+    background-image: url("../images/blue-pixels.png");
     color: var(--light);
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid var(--blue);
 }
 
 h1 {
+    display: inline-block;
+    padding: 50px 20px 8px 20px;
     font-size: 60px;
 }
 
@@ -47,12 +50,7 @@ nav a {
     padding: 8px;
 }
 
-a:hover {
-    border-radius: 4px;
-    background-color: var(--light);
-    color: var(--dark);
-}
-
+a:hover,
 a:focus {
     border-radius: 4px;
     background-color: var(--light);
@@ -60,29 +58,85 @@ a:focus {
 }
 
 main {
-    margin: auto;
-    max-width: 992px;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: var(--light);
+    border-left: 3px solid var(--blue);
+    border-right: 3px solid var(--blue);
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+article h2 {
+    text-align: center;
+    width: 20%;
+}
+
+article section {
+    padding: 10px;
+    width: 80%;
+    border-left: 3px solid var(--blue);
+}
+
+article img {
+    display: block;
+    margin: 10px auto;
+    border: 2px solid var(--dark);
+    border-radius: 100%;
+    height: 180px;
+    width: 180px;
+}
+
+article p {
+    padding: 10px 40px;
+    text-align: center;
+}
+
+article figure {
+    border: 3px solid var(--blue);
+}
+
+article figcaption {
+    display: inline-block;
+    height: 50px;
+    padding: 5px;
+    background-color: var(--blue);
+    color: var(--light);
+}
+
+article ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0px 10px;
+}
+
+article li {
+    list-style-type: none;
+    font-size: 20px;
+    padding: 15px;
 }
 
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
     width: 100%;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    background-color: var(--dark);
+    background-image: url("../images/blue-pixels.png");
     color: var(--light);
-    border-top: 3px solid black;
+    border-top: 3px solid var(--blue);
 }
 
 footer h4,
 footer li {
     display: inline-block;
     list-style-type: none;
-    padding: 7px;
+    padding: 25px 7px;
     font-size: 16px;
 }
 
@@ -92,66 +146,93 @@ footer a {
     padding: 6px;
 }
 
-article {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 20px 0px;
+/* ID Selectors */
+
+#contact a {
+    text-decoration: none;
+    color: var(--dark);
+    padding: 8px;
 }
 
-article h2 {
-    text-align: center;
-    width: 20%;
-}
-
-section {
-    padding: 10px;
-    width: 80%;
-    border-left: 3px solid var(--dark);
-}
-
-#contact ul {
-    display: flex;
-    justify-content: space-between;
-    margin: 0px 10px;
-}
-
-#contact li {
-    list-style-type: none;
-    font-size: 20px;
-    padding: 15px;
+#contact a:hover,
+#contact a:focus {
+    border-radius: 4px;
+    background-color: var(--blue);
+    color: var(--light);
 }
 
 #horiseon {
     height: 400px;
     width: 100%;
     background-image: url("../images/horiseon-demo.png");
+    margin-bottom: 7px;
 }
 
-figure h3 {
+#project2,
+#project3 {
     display: inline-block;
-    height: 50px;
-    padding: 15px;
-    background-color: rgba(126, 124, 124, 0.9);
-    color: black;
+    height: 150px;
+    width: 49.6%;
+    margin-bottom: 7px;
+}
+
+#project2 {
+    background-image: url("../images/keyboard.jpg");
+}
+
+#project3 {
+    background-image: url("../images/green-matrix.jpg");
+}
+
+#horiseon figcaption {
     position: relative;
     top: 320px;
 }
 
+#project2 figcaption,
+#project3 figcaption {
+    position: relative;
+    top: 70px;
+}
+
+/* Responsive Design */
+
 @media screen and (max-width: 992px) {
+    header,
+    article ul {
+        flex-direction: column;
+        align-items: center;
+    }
     article h2 {
         width: 20%;
     }
-    section {
+    article section {
         width: 80%;
     }
-  }
+    #project2,
+    #project3 {
+        width: 100%;
+    }
+}
   
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    header,
+    article ul {
+        flex-direction: column;
+        align-items: center;
+    }
     article h2 {
         width: 100%;
     }
-    section {
+    article section {
         width: 100%;
     }
-  }
+    #horiseon {
+        height: 150px;
+        width: 100%;
+    }
+    #horiseon figcaption {
+        position: relative;
+        top: 70px;
+    }
+}
