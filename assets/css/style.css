@@ -166,7 +166,7 @@ footer a {
 #project1 {
     height: 400px;
     width: 100%;
-    background-image: url("../images/quick-fix-recipe.png");
+    background-image: url("../images/luxury-rentals.png");
     margin-bottom: 7px;
 }
 
@@ -181,19 +181,19 @@ footer a {
 }
 
 #project2 {
-    background-image: url("../images/code-quiz.png");
+    background-image: url("../images/quick-fix-recipe.png");
 }
 
 #project3 {
-    background-image: url("../images/weather-dashboard.png");
+    background-image: url("../images/code-quiz.png");
 }
 
 #project4 {
-    background-image: url("../images/work-day.png");
+    background-image: url("../images/weather-dashboard.png");
 }
 
 #project5 {
-    background-image: url("../images/password-generator.png");
+    background-image: url("../images/work-day.png");
 }
 
 #project1 figcaption {
