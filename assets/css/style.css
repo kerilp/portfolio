@@ -25,14 +25,8 @@ a {
 
 li a:hover,
 li a:focus {
-    color: hotpink;
+    color: rgb(187, 36, 111);
     text-decoration: underline;
-}
-
-#logo:hover,
-#logo:focus {
-    color: hotpink;
-    text-decoration: none;
 }
 
 .jumbotron {
@@ -40,12 +34,12 @@ li a:focus {
 }
 
 #kp {
-    color: hotpink;
+    color: rgb(187, 36, 111);
     text-decoration: none;
 }
 
 #name {
-    color: hotpink;
+    color: rgb(187, 36, 111);
 }
 
 .jumbo-text {
@@ -59,11 +53,81 @@ li a:focus {
     align-items: center;
 }
 
-img {
-    box-shadow: -4px -2px 8px rgb(6, 9, 31), -2.4em -1.4em hotpink;
+#profile {
+    box-shadow: -4px -2px 8px rgb(6, 9, 31), -2.4em -1.4em rgb(187, 36, 111);
     margin: 20px;
 }
 
 #logo {
     font-size: 50px;
+}
+
+#skills {
+    -moz-column-count: 3;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 20px;
+    column-count: 3;
+    column-gap: 20px;
+}
+
+#skills li {
+    margin-left: 80px;
+}
+
+#about-me {
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: rgb(6, 9, 31);
+}
+
+.card-title {
+    background-color: rgb(187, 36, 111);
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-weight: bold;
+}
+
+.card-link {
+    background-color: rgb(6, 9, 31);
+    color: white;
+    font-weight: bold;
+    width: 47%;
+    border: 1px solid white;
+}
+
+.card-link:hover,
+.card-link:focus {
+    background-color: rgb(187, 36, 111);
+    color: white;
+}
+
+.lead {
+    font-size: 1.4em;
+}
+
+.no-live {
+    width: 100%;
+}
+
+.headers {
+    text-align: center;
+}
+
+article {
+    margin-top: 100px;
+}
+
+#contact {
+text-align: center;
+}
+
+#contact a:hover,
+#contact a:focus {
+    text-decoration: none;
+    color: rgb(187, 36, 111);
 }
