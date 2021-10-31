@@ -5,127 +5,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Keri Price</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Keri Price</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about-me">About Me</a>
+    <div class="container">
+        <nav class="navbar navbar-dark">
+            <a id="logo" href="#">&lt;<span id="kp">kp</span>/&gt;</a>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-me">About Me</a>
                 </li>
-                <li>
-                    <a href="#work">Work</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
                 </li>
-                <li>
-                    <a href="#contact">Contact</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
                 </li>
-                <li>
-                    <a href="./assets/pdf/keri-price-resume.pdf" download>
+                <li class="nav-item">
+                    <a class="nav-link" href="./assets/pdf/keri-price-resume.pdf" download>
                         Resume
                     </a>
                 </li>
             </ul>
         </nav>
-    </header>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4 jumbo-img">
+                        <img src="./assets/images/profile-pic.jpg" alt="Keri Price"/>
+                    </div>
+                    <div class="col-12 col-lg-8 jumbo-text">
+                        <h1 class="display-4">Hello! I'm <strong id="name">Keri Price</strong>.</h1>
+                        <h2 class="lead">Full Stack Web Developer & Coder Extraordinaire</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main>
+            <article id="about-me">
+                <section>
+                    <p>
+                        Hello, I'm <strong>Keri Price</strong>. I am a web developer located in Charlotte, NC. As
+                        a student of the UNCC Full Stack Coding Bootcamp, I am familiar with HTML, CSS,
+                        and JavaScript. I've also worked with jQuery, Node JS, Express Js, and MySQL/Sequelize.
+                    </p>
+                </section>
+            </article>
+            <!-- <article id="work">
+                <section>
+                    <a href="https://luxury-rentals-10-4-2021.herokuapp.com/">
+                        <figure id="project1">
+                            <figcaption>
+                                <h3>Luxury Rentals</h3>
+                                <h5>Node JS/Express JS</h5>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="https://kerilp.github.io/quick-fix-recipe/">
+                        <figure id="project2">
+                            <figcaption>
+                                <h3>Quick Fix Recipe</h3>
+                                <h5>HTML/CSS/JS</h5>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="https://kerilp.github.io/coding-quiz-challenge/">
+                        <figure id="project3">
+                            <figcaption>
+                                <h3>Code Quiz</h3>
+                                <h5>HTML/CSS/JS</h5>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="https://kerilp.github.io/weather-dashboard-exercise/">
+                        <figure id="project4">
+                            <figcaption>
+                                <h3>Weather Dashboard</h3>
+                                <h5>HTML/CSS/JS</h5>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="https://kerilp.github.io/work-day-scheduler/">
+                        <figure id="project5">
+                            <figcaption>
+                                <h3>Work Day Scheduler</h3>
+                                <h5>HTML/CSS/JS</h5>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </section> -->
+            <!-- </article>
+            <article id="contact">
+                <section>
+                    <ul>
+                        <li>
+                            <a href="mailto:klprice128@gmail.com">Email</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/keri-price-240545219/">LinkedIn</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/kerilp">Github</a>
+                        </li>
+                    </ul>
+                </section>
+            </article> -->
+        </main>
 
-    <main>
-        <article id="about-me">
-            <h2>About Me</h2>
-            <section>
-                <img src="./assets/images/profile-pic.jpg" alt="Profile Picture of Keri Price">
-                <p>
-                    Hello, I'm <strong>Keri Price</strong>. I am a web developer located in Charlotte, NC. As
-                    a student of the UNCC Full Stack Coding Bootcamp, I am familiar with HTML, CSS,
-                    and JavaScript. I've also worked with jQuery, Node JS, Express Js, and MySQL/Sequelize.
-                </p>
-            </section>
-        </article>
-        <article id="work">
-            <h2>Work</h2>
-            <section>
-                <a href="https://luxury-rentals-10-4-2021.herokuapp.com/">
-                    <figure id="project1">
-                        <figcaption>
-                            <h3>Luxury Rentals</h3>
-                            <h5>Node JS/Express JS</h5>
-                        </figcaption>
-                    </figure>
-                </a>
-                <a href="https://kerilp.github.io/quick-fix-recipe/">
-                    <figure id="project2">
-                        <figcaption>
-                            <h3>Quick Fix Recipe</h3>
-                            <h5>HTML/CSS/JS</h5>
-                        </figcaption>
-                    </figure>
-                </a>
-                <a href="https://kerilp.github.io/coding-quiz-challenge/">
-                    <figure id="project3">
-                        <figcaption>
-                            <h3>Code Quiz</h3>
-                            <h5>HTML/CSS/JS</h5>
-                        </figcaption>
-                    </figure>
-                </a>
-                <a href="https://kerilp.github.io/weather-dashboard-exercise/">
-                    <figure id="project4">
-                        <figcaption>
-                            <h3>Weather Dashboard</h3>
-                            <h5>HTML/CSS/JS</h5>
-                        </figcaption>
-                    </figure>
-                </a>
-                <a href="https://kerilp.github.io/work-day-scheduler/">
-                    <figure id="project5">
-                        <figcaption>
-                            <h3>Work Day Scheduler</h3>
-                            <h5>HTML/CSS/JS</h5>
-                        </figcaption>
-                    </figure>
-                </a>
-            </section>
-        </article>
-        <article id="contact">
-            <h2>Contact</h2>
-            <section>
-                <ul>
-                    <li>
-                        <a href="mailto:klprice128@gmail.com">Email</a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/keri-price-240545219/">LinkedIn</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/kerilp">Github</a>
-                    </li>
-                </ul>
-            </section>
-        </article>
-    </main>
-
-    <footer>
-        <h4>Keri Price:</h4>
-        <ul>
-            <li>
-                <a href="#about-me">About Me</a>
-            </li>
-            <li>
-                <a href="#work">Work</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-            <li>
-                <a href="./assets/pdf/keri-price-resume.pdf" download>
-                    Resume
-                </a>
-            </li>
-        </ul>
-    </footer>
+        <footer>
+            
+        </footer>
+    </div>
 </body>
 
 </html>
