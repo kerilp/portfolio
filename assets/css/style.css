@@ -131,3 +131,8 @@ text-align: center;
     text-decoration: none;
     color: rgb(187, 36, 111);
 }
+
+.contacts {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
