@@ -63,16 +63,8 @@ li a:focus {
 }
 
 #skills {
-    -moz-column-count: 3;
-    -moz-column-gap: 20px;
-    -webkit-column-count: 3;
-    -webkit-column-gap: 20px;
-    column-count: 3;
-    column-gap: 20px;
-}
-
-#skills li {
-    margin-left: 80px;
+    width: 100%;
+    text-align: center;
 }
 
 #about-me {
@@ -119,7 +111,7 @@ li a:focus {
 }
 
 article {
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 #contact {
@@ -135,9 +127,10 @@ text-align: center;
 .contacts {
     margin-top: 20px;
     margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
-footer img {
-    max-height: 50px;
-    margin: 20px;
-  }
+.icon img {
+    max-height: 80px;
+}
